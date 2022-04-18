@@ -70,7 +70,7 @@ int print_unsign(va_list arg, int base)
 	i = va_arg(arg, unsigned int);
 	s = convert_to("0123456789ABCDEF", i, base);
 	_puts(s);
-	cont =_strlen(s);
+	cont = _strlen(s);
 
 	return (cont);
 }
