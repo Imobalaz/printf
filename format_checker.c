@@ -9,9 +9,10 @@
 
 int format_checker(const char *format, va_list list)
 {
-	int count = 0;
-	int i = 0;
-	int loop_helper = 0;
+	int count, i;
+
+	count = 0;
+	i = 0;
 
 	while (format && format[i])
 	{
@@ -26,18 +27,18 @@ int format_checker(const char *format, va_list list)
 			if (format[i] == '%')
 				count += _putchar(format[i]);
 
-			if  (check_if_is_specifier(format[i] == 0)
+			if  (check_if_is_specifier(format[i] == 0))
 			{
 				count = print_if_not_specifier(format[i - 1], format[i], count);
 			}
 			else
-				count += print_if_specifier(format[i], list, &loop_helper);
+				count += print_if_specifier(format[i], list);
 		}
-					else
-					{
-					count += _putchar(format[i]);
-					}
-					i++;
-					}
-					return (count);
-					}
+		else
+		{
+			count += _putchar(format[i]);
+		}
+		i++;
+	}
+	return (count);
+}
