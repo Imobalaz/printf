@@ -3,7 +3,7 @@
 /**
  * print_string - prints string
  * @list : list of arguments passed
- * Return: 6 
+ * Return: 6
  */
 int print_string(va_list list)
 {

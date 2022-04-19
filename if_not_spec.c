@@ -6,7 +6,7 @@
  * @format : character
  * @count : number of characters printed up till then
  * Return: number of character
- */ 
+ */
 
 int print_if_not_specifier(char prev_format, char format, int count)
 {
