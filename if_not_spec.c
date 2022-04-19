@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * print_if_not_specifier - prints if a character is not a specifier
+ * @prev_format: previous format
+ * Return: number of character
+ */ 
+
 int print_if_not_specifier(char prev_format, char format, int count)
 {
 	count += _putchar('%');

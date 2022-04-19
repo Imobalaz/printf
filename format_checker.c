@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * format_checker - checks characters
+ * @format: the specifier
+ * Return: number of characters
+ */
+
 int format_checker(const char* format, va_list list)
 {
 	int count = 0;
