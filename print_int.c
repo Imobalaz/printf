@@ -29,7 +29,7 @@ int print_int(va_list list)
 	while (n > 9)
 	{
 		n = n / 10;
-		count ++;
+		count++;
 	}
 
 	recursion_int(m);

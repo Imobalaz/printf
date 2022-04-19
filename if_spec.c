@@ -19,7 +19,7 @@ int print_if_specifier(char format, va_list list)
 		{"d", print_int},
 		{"i", print_int},
 		{"b", print_binary},
-		{NULL,NULL}
+		{NULL, NULL}
 	};
 
 	i = 0;

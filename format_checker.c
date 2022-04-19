@@ -7,7 +7,7 @@
  * Return: number of characters
  */
 
-int format_checker(const char* format, va_list list)
+int format_checker(const char *format, va_list list)
 {
 	int count, i;
 
