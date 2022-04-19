@@ -5,27 +5,18 @@
  *
  * @list : arguments passed into _printf()
  *
- * @looper : pointer to loop_helper in format_checker()
- *
  * Return: number of characters printed
  */
 
-int print_binary(va_list list, int *looper)
+int print_binary(va_list list)
 {
-	int x, b, new, i;
+	int x, b, new;
 
 	x = 0;
 	b = 0;
 	new = 0;
-	i = 0;
 
-	while (i <= *looper)
-	{
-		new = va_arg(list, int);
-		i++;
-	}
-
-	*looper += 1;
+	new = va_arg(list, int);
 	x = new;
 
 	if (new < 0)

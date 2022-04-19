@@ -2,7 +2,9 @@
 
 /**
  * print_if_not_specifier - prints if a character is not a specifier
- * @prev_format: previous format
+ * @prev_format : previous character
+ * @format : character
+ * @count : number of characters printed up till then
  * Return: number of character
  */ 
 

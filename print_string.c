@@ -2,29 +2,22 @@
 
 /**
  * print_string - prints string
- * @list: list of arguments passed
- * @looper: loops
+ * @list : list of arguments passed
  * Return: 6 
  */
-int print_string(va_list list, int *looper)
+int print_string(va_list list)
 {
-	int i = 0;
+	int i;
 	char *arg;
 
-	while (i <= *looper)
-	{
-		arg = va_arg(list, char *);
-		i++;
-	}
-
-	*looper = *looper + 1;
+	arg = va_arg(list, char *);
 
 	i = 0;
 	if (arg != NULL)
 	{
 		while (arg[i])
 		{
-			putchar(arg[i]);
+			_putchar(arg[i]);
 			i++;
 		}
 

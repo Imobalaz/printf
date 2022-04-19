@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	length = format_character(format, list);
+	length = format_checker(format, list);
 	va_end(list);
 
 	return (length);
